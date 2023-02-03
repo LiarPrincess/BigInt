@@ -16,6 +16,7 @@ let package = Package(
     ],
     targets: [
         .target(name: "BigInt", path: "Sources"),
-        .testTarget(name: "BigIntTests", dependencies: ["BigInt"], path: "Tests")
+        .testTarget(name: "BigIntTests", dependencies: ["BigInt"], path: "Tests/BigIntTests"),
+        .testTarget(name: "PerformanceTests", dependencies: ["BigInt"], path: "Tests/Performance")
     ]
 )
